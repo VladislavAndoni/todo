@@ -1,0 +1,357 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+@font-face {
+    font-family: Roboto Thin;
+    src: url(../fonts/RobotoThin.ttf);
+}
+
+@font-face{
+    font-family: "Roboto Light";
+    src: url(../fonts/RobotoLight.ttf);
+}
+.container{
+    max-width: 976px;
+    margin: auto;
+    position: relative;
+    min-width: 400px;
+    height: 100vh;
+}
+    .levelDiv_1{
+        height: 110px;
+        width: 100%;
+        position: relative;
+        z-index: 2;
+    }
+        .titleDiv{
+            position: relative;
+            width: 100%;
+            height: 100px;
+            display: flex;
+            background-color:  #2196F3;
+            justify-content: space-between;
+        }
+            .title{
+                width: 250px;
+                height: 100%;
+            }
+            .mainMenu{
+                height: 100%;
+                margin-right: 30px;
+                display: flex;
+                flex-direction: row-reverse;
+            }
+                .mainMenu:hover{
+                    background-color: #64B5F6;
+                    cursor: pointer;
+                }
+                .menuImg{
+                    height: 40px;
+                    margin: 30px 5px 30px 5px;
+                }
+    .levelDiv_2, .levelDiv_3{
+        position: relative;
+        height: 100%;
+        background-color: #BBDEFB;
+        margin-bottom: 10px;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 30px;
+        min-height: 300px;
+    }
+        .navbar{
+            height:100%;
+            flex-direction: row;
+            display: flex;
+        }
+        .navbar a{
+            display: block;
+            color: white;
+            padding: 40px 32px;
+            font-family: "Roboto Light";
+            font-size: 20px;
+            text-decoration: none;
+        }
+        .navbar a:hover{
+            background-color: #2962FF;
+        }
+        .task{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            background-color: #E1F5FE;
+            margin-left: 90px;
+            margin-top: 10px;
+            margin-right: auto;
+            min-width: 400px;
+            width: 70%;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+        }
+            .selectIcon{
+                width: 35px;
+                position: absolute;
+                margin: 30px auto auto -60px;
+                user-select: none;
+                opacity: 0.3;
+            }
+            .selectIcon:hover{
+                cursor: pointer;
+                opacity: 1;
+            }
+        .addButton{
+            margin-left: 90px;
+            width: 45px;
+            user-select: none;
+            border-radius: 30px;
+            margin-top: 10px;
+            opacity: 0.3;
+        }
+        .addButton:hover{
+            cursor: pointer;
+            background-color: #90CAF9;
+            opacity: 1;
+        }
+    .logInDiv{
+        height: 500px;
+        width: 80%;
+        background-color: white;
+        position: relative;
+        z-index: 4;
+        display: flex;
+        min-width: 400px;
+        box-shadow: 0 0 20px rgba(0,0,0,0.5);
+        margin: 50px auto 30px auto;
+    }
+        .logInDivFrame1{
+            height: 100%;
+            width: 100%;
+            justify-content: space-between;
+            position: absolute;
+            display: flex;
+        }
+            .registrationDiv{
+                height: 70%;
+                width: 40%;
+                margin: auto 0 auto 5%;
+                display: flex;
+                flex-direction: column;
+            }
+                .registrationDiv p {
+                    margin: auto;
+                    width: 80%;
+                }
+            .verticalLine{
+    width: 1px;
+    height: 450px;
+    background-color: #1565C0;
+    margin: auto;
+}
+            .signInDiv{
+                height: 70%;
+                width: 40%;
+                margin: auto 5% auto 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+                .signInForm{
+                    margin: 20px auto 0 auto;
+                    height: 150px;
+                    width: 80%;
+                }
+                .addTaskForm{
+                    margin: 20px auto 40px auto;
+                    height: 180px;
+                    width: 80%;
+                }
+                .emailForm, .passwordForm, .textBoxForm{
+        border-bottom: solid 1px #1565C0;
+        height: 36px;
+        width: 100%;
+        font-family: "Roboto Light";
+        font-size: 20px;
+    }
+                .textAreaForm{
+                    border-bottom: solid 1px #1565C0;
+                    width: 100%;
+                    font-family: "Roboto Light";
+                    font-size: 20px;
+                }
+        .logInDivFrame2, .logInDivFrame3, .logInDivFrame4{
+            height: 100%;
+            width: 100%;
+            justify-content: space-around;
+            position: absolute;
+            display: none;
+        }
+            .signUpDiv{
+                min-width: 350px;
+                position: absolute;
+                margin: auto;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 80%;
+                width: 30%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+        }
+            .infoDiv{
+                min-width: 350px;
+                position: absolute;
+                margin: auto;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 80%;
+                width: 30%;
+                display: flex;
+                flex-direction: column;
+            }
+            .infoDiv p {
+                margin-top: 60px;
+                text-align: center;
+            }
+            .addTaskDiv{
+                min-width: 350px;
+                position: absolute;
+                margin: auto;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 80%;
+                width: 30%;
+                display: flex;
+                flex-direction: column;
+            }
+            .backIcon{
+                position: absolute;
+                top: 40px;
+                left: 40px;
+                width: 35px;
+                border-radius: 30px;
+            }
+            .backIcon:hover{
+                background-color: #90CAF9;
+                cursor: pointer;
+            }
+        .registrationButton, .signInButton, .signUpButton{
+            height: 50px;
+            line-height: 50px;
+            width: 80%;
+            background-color: #448AFF;
+            text-align: center;
+            font-family: "Roboto Thin";
+            font-size: 30px;
+            color: white;
+            margin:20px auto;
+            font-weight: 100;
+        }
+        .addTaskButton{
+            height: 50px;
+            line-height: 50px;
+            width: 80%;
+            background-color: #448AFF;
+            text-align: center;
+            font-family: "Roboto Thin";
+            font-size: 30px;
+            color: white;
+            margin:50px auto 0 auto;
+            font-weight: 100;
+        }
+        .registrationButton:hover, .signInButton:hover, .addTaskButton:hover, .signUpButton:hover{
+            background-color: #2962FF;
+            cursor: pointer;
+        }
+.shadowDiv{
+    width: 100%;
+    background-color: #0f0f0f;
+    position: absolute;
+    z-index: 3;
+    opacity: 0.7;
+    display: none;
+}
+
+p{
+    font-family: "Roboto Light";
+    font-size: 20px;
+    padding: 30px 30px;
+}
+
+.task p{
+    margin: 10px auto 30px 60px;
+}
+
+h1 {
+    margin: 5px 30px;
+    color: white;
+    font-size: 72px;
+    font-family: "Roboto Light";
+    font-weight: 900;
+}
+
+h1:hover{
+    color: #BBDEFB;
+    cursor: pointer;
+}
+
+h2{
+    font-family: "Roboto Thin";
+    margin-left: 30px;
+    font-size: 48px;
+    color: #212121;
+    margin-top: 30px;
+    font-weight: 200;
+}
+
+h3{
+    font-size: 36px;
+    font-family: "Roboto Thin";
+    color: #1565C0;
+    font-weight: 500;
+    text-align: center;
+}
+
+h4{
+    font-size: 28px;
+    font-family: "Roboto Light";
+    font-weight: 300;
+    color: #880E4F;
+    margin: 30px auto auto 30px;
+}
+
+.titleDiv, .levelDiv_2, .levelDiv_3, .registrationButton, .signInButton{
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+label.error {
+    font-family: "Roboto Light";
+    font-size: 14px;
+    color: darkred;
+    margin-bottom: 0;
+}
+
+label.currentUserLabel{
+    font-family: "Roboto Light";
+    font-size: 14px;
+    color: white;
+    position: absolute;
+    right: 100px;
+    margin: 43px 0 43px auto;
+}
+
+a{
+    text-decoration: none;
+}

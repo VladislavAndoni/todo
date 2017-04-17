@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="css/main.css"/>
+    <script type="text/javascript" src="jquery-3.2.0.min.js"></script>
+    <script type="text/javascript" src="jquery.cookie.js"></script>
+    <script type="text/javascript" src="jquery.maskedinput.min.js"></script>
+    <script type ="text/javascript" src="jquery.validate.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="jquery-ui.js"></script>
+    <title>//toDO</title>
+</head>
+<body>
+<div class="shadowDiv"></div>
+<div class="container">
+    <div class="levelDiv_1">
+        <div class="titleDiv">
+            <div class="title"><h1>//toDO</h1></div>
+            <label class="currentUserLabel"></label>
+            <div class="mainMenu">
+                <img src="menu-icon.png" class="menuImg"/>
+            </div>
+        </div>
+    </div>
+    <div class="levelDiv_2">
+        <h2>Your tasks</h2>
+        <div class="dropDownMenu">
+          <a href="#" id="logInButton">Log in</a>
+          <a href="#">About</a>
+          <a href="#">About</a>
+          <a href="#">Log in</a>
+        </div>
+        <img src="add.png" class="addButton"/>
+    </div>
+    <div class="levelDiv_3">
+        <h2>Sub's tasks</h2>
+    </div>
+    <div class="logInDiv">
+        <div class="logInDivFrame4">
+            <div class="infoDiv">
+                <h3>Congratulation!</h3>
+                <p>You've just signed up in our service, enjoy!</p>
+                <p>You can sign in to begin using application </p>
+            </div>
+        </div>
+        <div class="logInDivFrame2">
+            <img src="back.png" class="backIcon"/>
+            <div class="signUpDiv">
+                <h3>Sign Up</h3>
+                <form class="signInForm">
+                    <input type="email" name="email" class="emailForm" placeholder="E-mail"><br><br>
+                    <input type="password" name="password" class="passwordForm" placeholder="Password">
+                </form>
+                <div class="signUpButton">Submit</div>
+            </div>
+        </div>
+        <div class="logInDivFrame3">
+            <div class="addTaskDiv">
+                <h3>Creating your task</h3>
+                <form class="addTaskForm">
+                    <input type="text" name="title" class="textBoxForm" placeholder="Title"><br><br>
+                    <textarea name="description" rows="5" cols="30" class="textAreaForm" placeholder="Describe this task"></textarea>
+                    <input type="text" name="deadline" class="textBoxForm" placeholder="Deadline">
+                </form>
+                <div class="addTaskButton">Submit</div>
+            </div>
+        </div>
+        <div class="logInDivFrame1">
+            <div class="registrationDiv">
+                <h3>Sign Up</h3>
+                <p>If you have no an account, click the button below :)</p>
+                <div class="registrationButton">Let's go!</div>
+            </div>
+            <hr class="verticalLine">
+            <div class="signInDiv">
+                <h3>Sign In</h3>
+                <form class="signInForm">
+                    <input type="email" name="email" class="emailForm" placeholder="E-mail"><br><br>
+                    <input type="password" name="password" class="passwordForm" placeholder="Password">
+                </form>
+                <div class="signInButton">Submit</div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
